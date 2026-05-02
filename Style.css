@@ -1,0 +1,138 @@
+/* Google Font: Plus Jakarta Sans (Premium Feel) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* --- Base Settings --- */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* --- Header & Navigation --- */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: all 0.3s ease;
+}
+
+.logo-box {
+    background: #2563eb;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+/* --- Hero Section --- */
+.hero-container {
+    background: linear-gradient(135deg, #020617 0%, #1e3a8a 100%);
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Service Cards --- */
+.service-card-premium {
+    background: #ffffff;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.service-card-premium:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px -15px rgba(2, 6, 23, 0.12);
+    border-color: #2563eb;
+}
+
+.icon-wrap {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* --- Booking Modal --- */
+.modal-overlay {
+    background: rgba(2, 6, 23, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.input-premium {
+    width: 100%;
+    background-color: #f8fafc;
+    padding: 1.1rem;
+    border-radius: 1.25rem;
+    outline: none;
+    border: 1px solid #f1f5f9;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.input-premium:focus {
+    background-color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* --- Animations --- */
+.animate-zoom {
+    animation: zoomIn 0.35s ease-out forwards;
+}
+
+@keyframes zoomIn {
+    from { 
+        opacity: 0; 
+        transform: scale(0.95); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+
+@keyframes pulse-custom {
+    0%, 100% { opacity: 0.1; transform: scale(1); }
+    50% { opacity: 0.2; transform: scale(1.05); }
+}
+
+.animate-pulse {
+    animation: pulse-custom 5s ease-in-out infinite;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .hero-container {
+        border-radius: 2rem;
+        padding: 2rem 1.5rem;
+    }
+    
+    .service-card-premium {
+        padding: 1.5rem;
+    }
+}
