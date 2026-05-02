@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avni RO & Refrigeration | Patna Home Services</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Expert RO, AC, Electrician, and Appliances repair in Jaganpura, Patna. Fast doorstep service.">
+    
+    <!-- CSS aur Icon Links -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#f8fafc] text-slate-900">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="brand-box">
+                    <i data-lucide="wrench" class="text-white w-6 h-6"></i>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-black tracking-tighter uppercase italic">AVNI</span>
+                    <span class="text-[9px] font-bold text-blue-600 tracking-[0.3em] uppercase">Multi-Services Patna</span>
+                </div>
+            </div>
+            <button id="topCallBtn" class="bg-slate-900 text-white px-6 py-2.5 rounded-full font-bold text-xs flex items-center gap-2 hover:bg-blue-700 transition-all shadow-xl">
+                <i data-lucide="phone" class="w-4 h-4"></i> Call Support
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-28 pb-12 px-6">
+        <div class="max-w-7xl mx-auto hero-container rounded-[3rem] p-8 md:p-20 text-white relative overflow-hidden shadow-2xl">
+            <div class="relative z-10 max-w-2xl text-center md:text-left">
+                <div class="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-[10px] font-bold mb-8 tracking-widest uppercase border border-white/10 backdrop-blur-md">
+                    <i data-lucide="map-pin" class="w-3 h-3 text-yellow-400"></i> Jaganpura Petrol Pump, Patna
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-[1.1]">Expert Home <br><span class="text-blue-400">Repairs.</span></h1>
+                <p class="text-lg text-blue-100/80 mb-12 max-w-lg leading-relaxed">Patna ke best technicians ab aapke ghar pe. AC, RO, Fridge aur Electrical ka sabse bharosemand kaam.</p>
+                
+                <div class="flex flex-wrap gap-5 justify-center md:justify-start">
+                    <button id="heroCallBtn" class="bg-white text-blue-900 px-10 py-5 rounded-2xl font-black text-lg hover:bg-blue-50 transition-all shadow-xl flex items-center gap-2">
+                        <i data-lucide="phone-call" class="w-5 h-5"></i> Book Technician
+                    </button>
+                    <button id="heroWA" class="bg-emerald-500 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-emerald-600 transition-all flex items-center gap-3 shadow-xl">
+                        <i data-lucide="message-square" class="w-6 h-6"></i> WhatsApp
+                    </button>
+                </div>
+            </div>
+            <div class="absolute -right-20 -bottom-20 opacity-10 pointer-events-none hidden lg:block">
+                <i data-lucide="zap" class="w-[30rem] h-[30rem] animate-pulse"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid: Pura 6 Services Yahan Hain -->
+    <section class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="mb-16 text-center md:text-left">
+            <h2 class="text-4xl font-black text-slate-900 mb-4">Hamari Expert Services</h2>
+            <p class="text-slate-500 text-lg">Pick kijiye jo aapko repair karwana hai.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1. AC Service -->
+            <div class="service-card-premium bg-white p-10 rounded-[2.5rem] border border-slate-100 group">
+                <div class="icon-wrap bg-cyan-50 text-cyan-600 group-hover:bg-cyan-600 group-hover:text-white transition-all mb-8">
+                    <i data-lucide="wind" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-black mb-4">AC Technician</h3>
+                <p class="text-slate-500 text-sm mb-10 leading-relaxed">Jet cleaning, Gas refilling, aur PCB repair Split aur Window AC ke liye.</p>
+                <button onclick="openBooking('AC Service & Repair')" class="w-full py-4 rounded-2xl bg-slate-50 text-slate-900 font-bold hover:bg-cyan-600 hover:text-white transition-all">Book Now</button>
+            </div>
+
+            <!-- 2. Electrician -->
+            <div class="service-card-premium bg-white p-10 rounded-[2.5rem] border border-slate-100 group">
+                <div class="icon-wrap bg-yellow-50 text-yellow-600 group-hover:bg-yellow-600 group-hover:text-white transition-all mb-8">
+                    <i data-lucide="zap" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-black mb-4">Electrician</h3>
+                <p class="text-slate-500 text-sm mb-10 leading-relaxed">House wiring, MCB fitting, Fan/Light repair aur saare electrical kaam.</p>
+                <button onclick="openBooking('Electrical Services')" class="w-full py-4 rounded-2xl bg-slate-50 text-slate-900 font-bold hover:bg-yellow-600 hover:text-white transition-all">Book Now</button>
+            </div>
+
+            <!-- 3. RO Service -->
+            <div class="service-card-premium bg-white p-10 rounded-[2.5rem] border border-slate-100 group">
+                <div class="icon-wrap bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all mb-8">
+                    <i data-lucide="droplets" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-black mb-4">RO Purifier</h3>
+                <p class="text-slate-500 text-sm mb-10 leading-relaxed">Sare brands ke RO ki service, filter replacement aur TDS set kijiye.</p>
+                <button onclick="openBooking('RO Purifier Service')" class="w-full py-4 rounded-2xl bg-slate-50 text-slate-900 font-bold hover:bg-blue-600 hover:text-white transition-all">Book Now</button>
+            </div>
+
+            <!-- 4. Fridge Repair -->
+            <div class="service-card-premium bg-white p-10 rounded-[2.5rem] border border-slate-100 group">
+                <div class="icon-wrap bg-emerald-50 text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-all mb-8">
+                    <i data-lucide="snowflake" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-black mb-4">Refrigerator</h3>
+                <p class="text-slate-500 text-sm mb-10 leading-relaxed">Cooling problem, Gas charging aur Compressor repair turant ghar pe.</p>
+                <button onclick="openBooking('Fridge Repair Service')" class="w-full py-4 rounded-2xl bg-slate-50 text-slate-900 font-bold hover:bg-emerald-600 hover:text-white transition-all">Book Now</button>
+            </div>
+
+            <!-- 5. Washing Machine -->
+            <div class="service-card-premium bg-white p-10 rounded-[2.5rem] border border-slate-100 group">
+                <div class="icon-wrap bg-purple-50 text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all mb-8">
+                    <i data-lucide="refresh-ccw" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-black mb-4">Washing Machine</h3>
+                <p class="text-slate-500 text-sm mb-10 leading-relaxed">Front Load aur Top Load automatic machine ka motor aur drum expert repair.</p>
+                <button onclick="openBooking('Washing Machine Repair')" class="w-full py-4 rounded-2xl bg-slate-50 text-slate-900 font-bold hover:bg-purple-600 hover:text-white transition-all">Book Now</button>
+            </div>
+
+            <!-- 6. Geyser Repair -->
+            <div class="service-card-premium bg-white p-10 rounded-[2.5rem] border border-slate-100 group">
+                <div class="icon-wrap bg-orange-50 text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-all mb-8">
+                    <i data-lucide="thermometer-sun" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-black mb-4">Geyser Repair</h3>
+                <p class="text-slate-500 text-sm mb-10 leading-relaxed">Heating element change, tank cleaning aur safety repair Patna mein.</p>
+                <button onclick="openBooking('Geyser Repair Service')" class="w-full py-4 rounded-2xl bg-slate-50 text-slate-900 font-bold hover:bg-orange-600 hover:text-white transition-all">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Details -->
+    <footer class="bg-slate-900 text-white py-16 px-6 text-center overflow-hidden relative">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <h2 class="text-3xl font-black mb-2 uppercase tracking-tighter italic">Avni RO & Refrigeration</h2>
+            <p class="text-slate-500 mb-8 font-bold uppercase tracking-widest text-sm italic">Near Jaganpura Petrol Pump, Patna</p>
+            <div class="flex justify-center gap-8 mb-12">
+                <button id="footerCall" class="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center hover:bg-blue-600 transition-all shadow-xl">
+                    <i data-lucide="phone" class="w-6 h-6"></i>
+                </button>
+                <button id="footerWA" class="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center hover:bg-emerald-600 transition-all shadow-xl">
+                    <i data-lucide="message-circle" class="w-6 h-6 text-emerald-400"></i>
+                </button>
+            </div>
+            <p class="text-slate-700 text-[10px] font-bold uppercase tracking-[0.4em]">&copy; 2026 Patna Home Service Hub</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Booking -->
+    <div id="bookingModal" class="fixed inset-0 z-[100] hidden modal-overlay items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-[3rem] p-10 relative shadow-2xl animate-zoom">
+            <button onclick="closeBooking()" class="absolute top-8 right-8 text-slate-300 hover:text-red-500 transition-colors">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <h3 class="text-3xl font-black mb-1">Book Repair</h3>
+            <p id="svcLabel" class="text-blue-600 font-bold mb-8 text-[10px] uppercase tracking-widest leading-none"></p>
+            <div class="space-y-4">
+                <input type="text" id="custName" placeholder="Aapka Naam" class="input-premium">
+                <input type="tel" id="custPhone" placeholder="Mobile Number" class="input-premium">
+                <textarea id="custAddr" rows="3" placeholder="Patna Address (Mohalla)" class="input-premium"></textarea>
+                <button id="finalSubmit" class="w-full bg-blue-600 text-white py-5 rounded-2xl font-black text-xl shadow-xl mt-4 flex items-center justify-center gap-3">
+                    <i data-lucide="send" class="w-6 h-6"></i> Send via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
